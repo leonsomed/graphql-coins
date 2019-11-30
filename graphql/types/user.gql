@@ -1,0 +1,24 @@
+enum Preferences {
+  BOOKS
+  MUSIC
+  MOVIES
+}
+
+type Address {
+  street: String
+  number: Int
+  zip: Int
+}
+
+type User {
+  name: String!
+  email: String!
+  age: Int!
+  preferences: [Preferences!]
+  address: Address
+  friends: [User!]
+}
+
+extend type Query {
+  users: [User!]
+}
