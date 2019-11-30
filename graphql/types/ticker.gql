@@ -1,0 +1,10 @@
+type Ticker {
+  exchange: String
+  volume: Float
+  price: Float
+  currency: String
+}
+
+extend type Query {
+  tickers: [Ticker]
+}

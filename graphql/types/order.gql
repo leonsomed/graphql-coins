@@ -1,0 +1,14 @@
+type Order {
+  id: String!
+  amount: Float!
+  price: Float!
+}
+
+type Query {
+  orders: [Order]
+}
+
+type Mutation {
+  placeOrder(amount: Float!, price: Float!): Order!
+  removeOrder(orderId: String!): Boolean!
+}
