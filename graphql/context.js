@@ -15,8 +15,8 @@ const api = {
   getOrders: async () => {
     return axios.get(ordersUrl, options);
   },
-  placeOrder: async (amount, price) => {
-    return axios.post(ordersUrl, {amount, price}, options);
+  placeOrder: async (amount, price, exchange) => {
+    return axios.post(ordersUrl, {amount, price, exchange}, options);
   },
   removeOrder: async (orderId) => {
     return axios.delete(`${ordersUrl}/${orderId}`, options);

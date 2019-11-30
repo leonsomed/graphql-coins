@@ -7,8 +7,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Attach",
-      "port": 9229
+      "name": "Attach GraphQL",
+      "port": 5555
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Attach API",
+      "port": 7777
     }
   ]
 }

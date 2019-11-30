@@ -1,5 +1,6 @@
 type Order {
   id: String!
+  exchange: String!
   amount: Float!
   price: Float!
 }
@@ -9,6 +10,6 @@ type Query {
 }
 
 type Mutation {
-  placeOrder(amount: Float!, price: Float!): Order!
-  removeOrder(orderId: String!): Boolean!
+  placeOrder(amount: Float!, price: Float!, exchange: String!): Order!
+  removeOrder(orderId: String!): String!
 }

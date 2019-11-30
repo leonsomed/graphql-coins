@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:api": "node api/index.js",
-    "start:graphql": "node --inspect graphql/index.js"
+    "start:api": "node --inspect=0.0.0.0:7777 api/index.js",
+    "start:graphql": "node --inspect=0.0.0.0:5555 graphql/index.js"
   },
   "keywords": [],
   "author": "",
